@@ -10,5 +10,5 @@ import { DefaultLoginLayout } from '../../components/default-login-layout/defaul
   styleUrl: './login.scss'
 })
 export class Login {
-
+  
 }
