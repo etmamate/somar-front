@@ -7,13 +7,13 @@ main {
     justify-content: center;
     height: 100%;
 
-    section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-    }
+    // section {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     justify-content: center;
+    //     height: 100%;
+    // }
 
     img{
         size: 100;
@@ -30,6 +30,8 @@ main {
         flex-grow: 0.3;
         padding: 0 35px;
         gap: 34px;
+        
+
 
         img{
             margin-bottom: 30px;
