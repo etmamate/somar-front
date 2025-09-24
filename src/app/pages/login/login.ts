@@ -26,13 +26,13 @@ export class Login {
   ) {
     this.loginForm = new FormGroup({
       email: new FormControl('',[Validators.required]),
-      password: new FormControl('',[Validators.required, Validators.minLength(6)])
+      senha: new FormControl('',[Validators.required, Validators.minLength(6)])
     })  
   }
 
   submit(){
     console.log(this.loginForm.value)
-    this.loginService.login(this.loginForm.value.email, this.loginForm.value.password).subscribe({
+    this.loginService.login(this.loginForm.value.email, this.loginForm.value.senha).subscribe({
       // next: () => this.toastService.success("Login realizado"),
       // error: () => this.toastService.error("Erro inesperado!")
       next: () => alert("Login realizado"),

@@ -42,7 +42,7 @@ export class Signup {
 
   submit(){
     console.log(this.signupForm.value)
-    this.loginService.login(this.signupForm.value.email, this.signupForm.value.password).subscribe({
+    this.loginService.signup(this.signupForm.value.name,this.signupForm.value.email, this.signupForm.value.password).subscribe({
       // next: () => this.toastService.success("Login realizado"),
       // error: () => this.toastService.error("Erro inesperado!")
       next: () => alert("Login realizado"),
